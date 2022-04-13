@@ -1,0 +1,23 @@
+.changelog/
+
+node_modules/
+storybook-static
+packages/**/node_modules
+packages/**/dist
+packages/**/.env
+*.log
+*.cache
+
+logs
+*.log
+npm-debug.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log
+yarn-error.log*
+
+# dotenv environment variables file
+.env
+.env.*
+
+.DS_Store

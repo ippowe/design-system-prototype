@@ -1,0 +1,14 @@
+{
+  "name": "date",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "module": "dist/date.esm.js",
+  "typings": "dist/index.d.ts",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsdx build --tsconfig ./tsconfig.json"
+  },
+  "devDependencies": {
+    "@lerna-lite/run": "^1.0.5"
+  }
+}
