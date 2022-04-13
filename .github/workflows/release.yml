@@ -21,7 +21,7 @@ jobs:
           node-version: "14"
 
       - name: Fix .npmrc
-        run: sed -i 's/\${GITHUB_REGISTRY_TOKEN}/'"${GITHUB_REGISTRY_TOKEN}"'/' .npmrc
+        run: sed -i 's/\$GITHUB_REGISTRY_TOKEN/'"$GITHUB_REGISTRY_TOKEN"'/' .npmrc
         env:
           GITHUB_REGISTRY_TOKEN: ${{ secrets.NPM_REGISTRY_TOKEN }}
 
