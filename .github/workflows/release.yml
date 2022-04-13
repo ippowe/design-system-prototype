@@ -26,6 +26,15 @@ jobs:
       - name: Build packages
         run: yarn build:packages
 
+      - name: Creating .npmrc
+        run: |
+          cat << EOF > "$HOME/.npmrc"
+            email=jae7415@gmail.com
+            //registry.npmjs.org/:_authToken=$NPM_TOKEN
+          EOF
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_REGISTRY_TOKEN }}
+
       - name: Create release Pull request or Publish npm
         id: changesets
         uses: changesets/action@master
@@ -35,4 +44,3 @@ jobs:
           title: "chore(release): version packages"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_REGISTRY_TOKEN }}
