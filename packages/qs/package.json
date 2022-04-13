@@ -18,5 +18,8 @@
   },
   "scripts": {
     "build": "tsdx build --tsconfig ./tsconfig.json"
+  },
+  "dependencies": {
+    "is-thirteen": "^2.0.0"
   }
 }
