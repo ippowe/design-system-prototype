@@ -1,10 +1,21 @@
 {
-  "name": "qs",
   "version": "1.0.0",
+  "name": "@mash/qs",
+  "files": [
+    "dist"
+  ],
   "main": "dist/index.js",
   "module": "dist/date.esm.js",
   "typings": "dist/index.d.ts",
   "license": "MIT",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "repository": {
+    "directory": "packages/qs",
+    "type": "git",
+    "url": "git+https://github.com/ippowe/design-system-prototype.git"
+  },
   "scripts": {
     "build": "tsdx build --tsconfig ./tsconfig.json"
   }

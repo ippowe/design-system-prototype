@@ -1,14 +1,25 @@
 {
-  "name": "date",
   "version": "1.0.0",
+  "name": "@mash/date",
+  "files": [
+    "dist"
+  ],
   "main": "dist/index.js",
   "module": "dist/date.esm.js",
   "typings": "dist/index.d.ts",
   "license": "MIT",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "repository": {
+    "directory": "packages/date",
+    "type": "git",
+    "url": "git+https://github.com/ippowe/design-system-prototype.git"
+  },
   "scripts": {
     "build": "tsdx build --tsconfig ./tsconfig.json"
   },
-  "devDependencies": {
-    "@lerna-lite/run": "^1.0.5"
+  "dependencies": {
+    "date-fns": "^2.28.0"
   }
 }
