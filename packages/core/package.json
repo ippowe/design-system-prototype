@@ -1,0 +1,25 @@
+{
+  "version": "0.0.0",
+  "name": "@mash/core",
+  "files": [
+    "dist"
+  ],
+  "main": "dist/index.js",
+  "module": "dist/date.esm.js",
+  "typings": "dist/index.d.ts",
+  "license": "MIT",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "repository": {
+    "directory": "packages/core",
+    "type": "git",
+    "url": "git+https://github.com/ippowe/design-system-prototype.git"
+  },
+  "scripts": {
+    "build": "tsdx build --tsconfig ./tsconfig.json"
+  },
+  "dependencies": {
+    "date-fns": "^2.28.0"
+  }
+}
