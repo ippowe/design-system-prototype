@@ -35,6 +35,9 @@ jobs:
         env:
           NPM_TOKEN: ${{ secrets.NPM_REGISTRY_TOKEN }}
 
+      - name: log .npmrc
+        run: cat "$HOME/.npmrc"
+
       - name: Create release Pull request or Publish npm
         id: changesets
         uses: changesets/action@master
