@@ -20,6 +20,8 @@
     "build": "tsdx build --tsconfig ./tsconfig.json"
   },
   "dependencies": {
+    "@mash/date": "1.1.0",
+    "@mash/qs": "1.1.0",
     "date-fns": "^2.28.0"
   }
 }
