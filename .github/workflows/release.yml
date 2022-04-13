@@ -2,9 +2,6 @@ name: Release
 
 on:
   push:
-    paths:
-      - ".changeset/**"
-      - "packages/**"
     branches:
       - master
 
@@ -22,11 +19,6 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: "14"
-
-      - name: Fix .npmrc
-        run: sed -i 's/\${NPM_REGISTRY_TOKEN}/'"${NPM_REGISTRY_TOKEN}"'/' .npmrc
-        env:
-          NPM_REGISTRY_TOKEN: ${{ secrets.NPM_REGISTRY_TOKEN }}
 
       - name: Install Dependencies
         run: yarn boot
