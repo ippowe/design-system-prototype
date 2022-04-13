@@ -5,6 +5,10 @@
   "author": "Jaemin Ahn",
   "license": "MIT",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ippowe/design-system-prototype.git"
+  },
   "workspaces": [
     "packages/*"
   ],
