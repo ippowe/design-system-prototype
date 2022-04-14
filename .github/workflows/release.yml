@@ -20,10 +20,21 @@ jobs:
         with:
           node-version: "14"
 
-      - name: Fix .npmrc
-        run: sed -i 's/\$GITHUB_REGISTRY_TOKEN/'"$GITHUB_REGISTRY_TOKEN"'/' .npmrc && cat .npmrc
+      - name: Creating .npmrc
+        run: |
+          cat << EOF > "$HOME/.npmrc"
+            email=jae7415@gmail.com
+            //registry.npmjs.org/:_authToken=$NPM_TOKEN
+            @ippowe:registry=https://npm.pkg.github.com/
+          EOF
         env:
-          GITHUB_REGISTRY_TOKEN: ${{ secrets.NPM_REGISTRY_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_REGISTRY_TOKEN }}
+          HOME: ${{ github.workspace }}
+
+      - name: Logging .npmrc
+        run: cat "$HOME/.npmrc"
+        env:
+          HOME: ${{ github.workspace }}
 
       - name: Install Dependencies
         run: yarn boot
