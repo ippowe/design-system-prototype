@@ -1,6 +1,6 @@
 {
   "version": "1.2.0",
-  "name": "@mash/qs",
+  "name": "@ippowe/qs",
   "files": [
     "dist"
   ],

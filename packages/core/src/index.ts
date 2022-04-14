@@ -1,2 +1,2 @@
-export * from "@mash/date";
-export * from "@mash/qs";
+export * from "@ippowe/date";
+export * from "@ippowe/qs";
