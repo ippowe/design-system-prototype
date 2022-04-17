@@ -1,5 +1,17 @@
 # @mash/core
 
+## 0.3.0
+
+### Minor Changes
+
+- b8112b8: Add storybook
+
+### Patch Changes
+
+- Updated dependencies [b8112b8]
+  - @ippowe/date@1.3.0
+  - @ippowe/qs@1.4.0
+
 ## 0.2.0
 
 ### Minor Changes
