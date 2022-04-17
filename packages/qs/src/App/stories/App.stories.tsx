@@ -1,7 +1,7 @@
 import { App } from "../App";
 
 export default {
-  title: "H1",
+  title: "H3",
   component: App,
 };
 

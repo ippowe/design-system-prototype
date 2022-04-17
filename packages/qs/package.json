@@ -20,6 +20,10 @@
     "build": "tsdx build --tsconfig ./tsconfig.json"
   },
   "dependencies": {
-    "is-thirteen": "^2.0.0"
+    "is-thirteen": "^2.0.0",
+    "react": "^18.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.5"
   }
 }
