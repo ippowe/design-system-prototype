@@ -17,7 +17,9 @@
     "build": "lerna run build --stream",
     "build:packages": "yarn build",
     "release": "changeset publish",
-    "commit": "cz"
+    "commit": "cz",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "config": {
     "commitizen": {
@@ -25,14 +27,23 @@
     }
   },
   "devDependencies": {
+    "@babel/core": "^7.17.9",
     "@changesets/cli": "^2.22.0",
     "@commitlint/cli": "^16.2.3",
     "@commitlint/config-conventional": "^16.2.1",
     "@lerna-lite/cli": "^1.0.5",
     "@lerna-lite/run": "^1.0.5",
+    "@storybook/addon-actions": "^6.4.22",
+    "@storybook/addon-essentials": "^6.4.22",
+    "@storybook/addon-interactions": "^6.4.22",
+    "@storybook/addon-links": "^6.4.22",
+    "@storybook/react": "^6.4.22",
+    "@storybook/testing-library": "^0.0.9",
+    "babel-loader": "^8.2.4",
     "cz-conventional-changelog": "^3.3.0",
     "husky": "^7.0.4",
     "tsdx": "^0.14.1",
     "typescript": "^4.6.3"
-  }
+  },
+  "dependencies": {}
 }
