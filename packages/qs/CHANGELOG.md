@@ -1,5 +1,11 @@
 # @mash/qs
 
+## 1.4.0
+
+### Minor Changes
+
+- b8112b8: Add storybook
+
 ## 1.3.0
 
 ### Minor Changes
